@@ -1,0 +1,4 @@
+This 'dist' folder is the result of webpack build tool (cli: "webpack --mode production"). The bundle.js contains transpiled JS code from the 'src' folder. Babel is used as a loader plugin to translate JSX and ES6 code to vanilla JS in bundle.js. The index.html is built by webpack via a plugin called htmlWebpackPlugin together with a simple template specified in webpack.config.js. In total, these are the only bare minimal set of required files to be able to deploy on any server. Hence the 'dist' folder contains everything that is needed for deployment.
+
+For more detail see webpack.config.js
+For dev environment, a dev server with hot reload can be initiated via "npm start". For more detail on the CLI please refer to the package.json
