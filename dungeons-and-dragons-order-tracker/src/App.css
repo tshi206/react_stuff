@@ -1,0 +1,57 @@
+.card{
+    width: 417px;
+    padding: 8px;
+    box-shadow: #222222 6px 6px 6px;
+    background-color: black;
+    border: 10px groove darkgoldenrod;
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card input {
+    font-family: "Lucida Handwriting", fantasy ;
+    width: 90%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: darkgoldenrod 4px outset;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.card label {
+    margin-left: 5px;
+    color: ghostwhite;
+    font-style: oblique;
+    font-family: "Adobe Devanagari", cursive;
+}
+
+.card button {
+    margin-top: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 60%;
+    color: darkgoldenrod;
+    font-style: oblique;
+    font-family: "Adobe Devanagari", cursive;
+    border: gold groove 5px;
+}
+
+.add {
+    margin: 12px;
+    width: 65%;
+    height: 100px;
+    font-family: "Adobe Devanagari", cursive;
+    font-style: oblique;
+    font-size: 50px;
+    color: goldenrod;
+    border: gold groove 5px;
+}
+
+.add text {
+    font-family: "Adobe Devanagari", cursive;
+    font-style: oblique;
+    font-size: 50px;
+}
