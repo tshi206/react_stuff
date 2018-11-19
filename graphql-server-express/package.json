@@ -1,0 +1,23 @@
+{
+  "name": "graphql-server-express",
+  "version": "1.0.0",
+  "description": "Simple GraphQL Server",
+  "main": "server.js",
+  "scripts": {
+    "dev:server": "nodemon server.js",
+    "json:server": "json-server --watch data.json",
+    "start": "concurrently \"npm run dev:server\" \"npm run json:server\""
+  },
+  "author": "mason",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "nodemon": "^1.18.6",
+    "axios": "latest",
+    "json-server": "latest",
+    "concurrently": "latest"
+  }
+}
