@@ -1,3 +1,4 @@
 node_modules
 
-/client
+/* The better practice is also to ignore /client folder but for the sake of recording purpose I will upload the react app source as well */
+/* /client */
