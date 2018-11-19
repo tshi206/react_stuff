@@ -1,0 +1,78 @@
+.app {
+    background: #209cee;
+    padding: 30px;
+    height: 100%;
+}
+
+.todo-list {
+    background: #e8e8e8;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.todo {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto;
+    white-space: normal;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo p {
+    text-align: center !important;
+    font-size: 3em;
+    font-family: "Comic Sans MS", fantasy;
+    padding-bottom: 6px;
+    margin: 6px auto !important;
+    float: left;
+    width: 80%;
+}
+
+.todo .btns {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+button {
+    font-size: 1.5em;
+    font-family: "Comic Sans MS", fantasy;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+button:hover {
+    background-color: palegreen;
+}
+
+#delete:hover {
+    background-color: red !important;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    height: 2.25em;
+    padding: 1rem 1rem 6px;
+    margin: 6px auto !important;
+    background-color: palegreen;
+    text-align: center !important;
+    font-size: 3em;
+    font-family: "Comic Sans MS", fantasy;
+}
