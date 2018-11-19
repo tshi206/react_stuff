@@ -11,3 +11,8 @@ It appears currently that git-subtree is being included into git-core, but I don
 
 ### Important Note
 You need to run the above command from the top-level of the working tree (i.e., the top-level of your git repo dir).
+
+### Visit The App
+```
+heroku open
+```
