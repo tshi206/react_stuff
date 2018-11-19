@@ -2,3 +2,5 @@ node_modules
 
 /* The better practice is also to ignore /client folder but for the sake of recording purpose I will upload the react app source as well */
 /* /client */
+
+/* 'client' folder should be ignored in practice since the client source files will be built into static files inside the server's public folder upon deployment. In general, it should not be included in the codebase */
