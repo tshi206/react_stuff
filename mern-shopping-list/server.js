@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const { mongoURI } = require("./config");
@@ -21,6 +22,16 @@ const items = require("./routes/api/items");
 
         // Middleware and routes
         app.use("/api/items", items);
+
+        // Serve static assets if in production
+        if (process.env.NODE_ENV === "production") {
+            // Set static folder
+            app.use(express.static("public"));
+            // If the route does not hit apis pattern above, return the index.html from 'public' folder
+            app.get('*', (req, res) => {
+                res.sendFile(path.resolve(__dirname, "public", "index.html"))
+            });
+        }
 
         const PORT = process.env.PORT || 5000;
 
