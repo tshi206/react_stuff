@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const { mongoURI } = require("./config");
@@ -7,6 +8,9 @@ const items = require("./routes/api/items");
 (async () => {
     try {
         const app = express();
+
+        // Allow cross-origin request
+        app.use(cors());
 
         // Body Parser Middleware
         app.use(bodyParser.json());
