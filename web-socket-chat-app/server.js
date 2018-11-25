@@ -22,7 +22,7 @@ const writeFile = promisfy(fs.writeFile);
     const PORT = process.env.PORT || 4000;
 
     // see if in production
-    const hostname = process.env.PORT ? `https://web-socket-chat-app.herokuapp.com/:${PORT}` : `http://localhost:${PORT}`;
+    const hostname = process.env.PORT ? `https://web-socket-chat-app.herokuapp.com:${PORT}` : `http://localhost:${PORT}`;
 
     const server = app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
 
